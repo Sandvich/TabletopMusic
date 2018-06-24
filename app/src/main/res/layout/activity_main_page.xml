@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RadioGroup
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/playlistsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:text="@string/playlists"
+                android:textAppearance="@android:style/TextAppearance.Material.Title" />
+
+            <RadioButton
+                android:id="@+id/playlistSelection1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:text="@string/combat" />
+
+            <RadioButton
+                android:id="@+id/playlistSelection2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:text="@string/kin" />
+
+            <RadioButton
+                android:id="@+id/playlistSelection3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:text="@string/arcadia" />
+
+            <RadioButton
+                android:id="@+id/playlistSelection4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:text="@string/marcuria" />
+
+            <RadioButton
+                android:id="@+id/playlistSelection5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:text="@string/stark" />
+
+            <RadioButton
+                android:id="@+id/playlistSelection6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:text="@string/balance" />
+
+            <RadioButton
+                android:id="@+id/playlistSelection7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:text="@string/vanguard" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/songsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/songs"
+                android:textAppearance="@android:style/TextAppearance.Material.Title" />
+
+            <RadioButton
+                android:id="@+id/songSelection1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/rush" />
+
+            <RadioButton
+                android:id="@+id/songSelection2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/little_song" />
+
+            <RadioButton
+                android:id="@+id/songSelection3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/normal_day" />
+
+            <RadioButton
+                android:id="@+id/songSelection4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/be_with_you" />
+
+            <RadioButton
+                android:id="@+id/songSelection5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/darling_curse" />
+
+            <RadioButton
+                android:id="@+id/songSelection6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/pacemaker" />
+
+            <RadioButton
+                android:id="@+id/songSelection7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/nothing_hurts_now" />
+
+            <RadioButton
+                android:id="@+id/songSelection8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/falling" />
+        </RadioGroup>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/play_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/play" />
+
+            <Button
+                android:id="@+id/stop_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/play_pause_button"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:cropToPadding="false"
+                android:padding="0dp"
+                android:src="@mipmap/play" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/playing_info"
+                    style="@style/Base.TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SongName\nAlbum - Artist" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="11dp" />
+
+                <ProgressBar
+                    android:id="@+id/playing_progress"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/art_playing"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/no_art" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/infobar"-->
+        <!--style="@style/TitleBar"-->
+        <!--android:layout_width="?attr/layout_constraintWidth_max"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:theme="@style/TitleBar"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"></android.support.v7.widget.Toolbar>-->
+
+</android.support.constraint.ConstraintLayout>

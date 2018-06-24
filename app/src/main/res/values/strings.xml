@@ -1,0 +1,26 @@
+<resources>
+    <!-- Core important stuff -->
+    <string name="app_name">Dreamfall</string>
+    <string name="play">Play Selection</string>
+    <string name="stop">Stop Playback</string>
+    <string name="playlists">Playlist Selection</string>
+    <string name="songs">Song Selection</string>
+    <!-- Playlists -->
+    <string name="combat">Combat Music</string>
+    <string name="kin">Draic Kin</string>
+    <string name="arcadia">Exploration (Arcadia)</string>
+    <string name="stark">Exploration (Stark)</string>
+    <string name="marcuria">Exploration (Marcuria)</string>
+    <string name="balance">The Sentinels of the Balance</string>
+    <string name="vanguard">The Vanguard</string>
+    <!-- Individual Songs -->
+    <string name="rush">Rush - Ingvild Hasund</string>
+    <string name="little_song">Little Song - Ingvild Hasund</string>
+    <string name="normal_day">All On A Normal Day - Ingvild Hasund</string>
+    <string name="lana_maud">Lana &amp; Maud (edit) - Simon Poole</string>
+    <string name="be_with_you">Be With You - Even \'Magnet\' Johansen</string>
+    <string name="darling_curse">My Darling Curse - Even \'Magnet\' Johansen</string>
+    <string name="pacemaker">The Pacemaker - Even \'Magnet\' Johansen</string>
+    <string name="nothing_hurts_now">Nothing Hurts Now - Even \'Magnet\' Johansen</string>
+    <string name="falling">Fallin\' - Egil Olsen</string>
+</resources>

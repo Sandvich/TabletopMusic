@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="accent_material_dark">#81c784</color>
+    <color name="primary_dark_material_dark">#1b5e20</color>
+    <color name="primary_material_dark">#33691e</color>
+    <color name="titlebar_primary">#33691e</color>
+    <color name="titlebar_accent">#81c784</color>
+</resources>
