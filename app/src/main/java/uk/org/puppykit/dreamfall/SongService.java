@@ -1,7 +1,6 @@
 package uk.org.puppykit.dreamfall;
 
 // Android Imports
-import android.media.MediaDescription;
 import android.media.MediaPlayer;
 import android.media.browse.MediaBrowser;
 import android.media.session.MediaSession;
@@ -10,18 +9,19 @@ import android.os.Bundle;
 import android.service.media.MediaBrowserService;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.util.Log;
 //Java Imports
-import java.util.ArrayList;
 import java.util.List;
 
 public class SongService extends MediaBrowserService {
+    private static final String TAG = SongService.class.getSimpleName();
     private static final String MY_MEDIA_ROOT_ID = "dreamfall";
     private static final String MY_EMPTY_MEDIA_ROOT_ID = "dreamfall_empty";
 
     // Playlists go here
     @Override
     public void onCreate() {
-        System.out.print("Running OnCreate method.");
+        Log.d(TAG,"Running onCreate.");
         super.onCreate();
 
         // Initialise media session

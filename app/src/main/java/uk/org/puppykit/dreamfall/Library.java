@@ -15,6 +15,7 @@ import java.util.concurrent.TimeUnit;
 final class Library {
     // The basics
     private static final TreeMap<String, MediaMetadata> library = new TreeMap<>();
+    private static final HashMap<String, String> artLibrary = new HashMap<>();
     private static final HashMap<String, String> musicFileName = new HashMap<>();
 
     public static List<MediaBrowser.MediaItem> getMediaItems() {
@@ -26,6 +27,10 @@ final class Library {
             );
         }
         return result;
+    }
+
+    public static Bitmap getAlbumArt(String mediaId) {
+        return BitmapFactory.decodeFile(artLibrary.get(mediaId));
     }
 
     // build our library
@@ -50,11 +55,11 @@ final class Library {
                 putString(MediaMetadata.METADATA_KEY_TITLE, title).
                 putString(MediaMetadata.METADATA_KEY_ARTIST, artist).
                 putString(MediaMetadata.METADATA_KEY_ALBUM, album).
-                putString(MediaMetadata.METADATA_KEY_ALBUM_ART_URI, getAlbumArtUri(albumArtName)).
                 putLong(MediaMetadata.METADATA_KEY_DURATION, TimeUnit.MILLISECONDS.convert(duration, TimeUnit.SECONDS)).
                 putString(MediaMetadata.METADATA_KEY_MEDIA_URI, getFileUri(fileName)).
                 build();
         library.put(mediaId, songData);
+        artLibrary.put(mediaId, getAlbumArtUri(albumArtName));
         musicFileName.put(mediaId, fileName);
     }
 
